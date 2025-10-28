@@ -3,28 +3,55 @@ import { AadhaarModel, IAadhaar } from "../models/aadhar.model";
 import { FilterQuery, UpdateQuery } from "mongoose";
 
 export interface IRepository<T> {
-  create(data: Partial<T>): Promise<T>;
+  // create(data: Partial<T>): Promise<T>;
   findById(id: string): Promise<T | null>;
   findOne(filter: FilterQuery<T>): Promise<T | null>;
   findAll(filter?: FilterQuery<T>, limit?: number, skip?: number): Promise<T[]>;
   update(id: string, data: UpdateQuery<T>): Promise<T | null>;
   delete(id: string): Promise<boolean>;
   count(filter?: FilterQuery<T>): Promise<number>;
+  findOrCreateByAadhaarNumber(
+    aadhaarData: Partial<IAadhaar>
+  ): Promise<IAadhaar>;
 }
 
 export class AadhaarRepository implements IRepository<IAadhaar> {
   /**
    * Create a new Aadhaar record
    */
-  async create(data: Partial<IAadhaar>): Promise<IAadhaar> {
+  async findOrCreateByAadhaarNumber(
+    aadhaarData: Partial<IAadhaar>
+  ): Promise<IAadhaar> {
     try {
-      const aadhaar = new AadhaarModel(data);
-      return await aadhaar.save();
-    } catch (error: any) {
-      if (error.code === 11000) {
-        throw new Error("Aadhaar number already exists");
+      if (!aadhaarData.aadhaarNumber) {
+        throw new Error("Aadhaar number is required.");
       }
-      throw new Error(`Failed to create Aadhaar record: ${error.message}`);
+
+      // Clean Aadhaar number (remove spaces or non-digits)
+      const cleanNumber = aadhaarData.aadhaarNumber.replace(/\D/g, "");
+
+      // Check if record already exists
+      let existingRecord = await AadhaarModel.findOne({
+        aadhaarNumber: cleanNumber,
+      }).exec();
+
+      if (existingRecord) {
+        console.log("✅ Existing Aadhaar found.");
+        return existingRecord;
+      }
+
+      // Create a new record if not exists
+      const newRecord = new AadhaarModel({
+        ...aadhaarData,
+        aadhaarNumber: cleanNumber,
+      });
+
+      console.log("🆕 Creating new Aadhaar record.");
+      return await newRecord.save();
+    } catch (error: any) {
+      throw new Error(
+        `Failed to find or create Aadhaar record: ${error.message}`
+      );
     }
   }
 

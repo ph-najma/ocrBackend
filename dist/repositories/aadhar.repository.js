@@ -7,16 +7,31 @@ class AadhaarRepository {
     /**
      * Create a new Aadhaar record
      */
-    async create(data) {
+    async findOrCreateByAadhaarNumber(aadhaarData) {
         try {
-            const aadhaar = new aadhar_model_1.AadhaarModel(data);
-            return await aadhaar.save();
+            if (!aadhaarData.aadhaarNumber) {
+                throw new Error("Aadhaar number is required.");
+            }
+            // Clean Aadhaar number (remove spaces or non-digits)
+            const cleanNumber = aadhaarData.aadhaarNumber.replace(/\D/g, "");
+            // Check if record already exists
+            let existingRecord = await aadhar_model_1.AadhaarModel.findOne({
+                aadhaarNumber: cleanNumber,
+            }).exec();
+            if (existingRecord) {
+                console.log("✅ Existing Aadhaar found.");
+                return existingRecord;
+            }
+            // Create a new record if not exists
+            const newRecord = new aadhar_model_1.AadhaarModel({
+                ...aadhaarData,
+                aadhaarNumber: cleanNumber,
+            });
+            console.log("🆕 Creating new Aadhaar record.");
+            return await newRecord.save();
         }
         catch (error) {
-            if (error.code === 11000) {
-                throw new Error("Aadhaar number already exists");
-            }
-            throw new Error(`Failed to create Aadhaar record: ${error.message}`);
+            throw new Error(`Failed to find or create Aadhaar record: ${error.message}`);
         }
     }
     /**

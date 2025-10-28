@@ -42,7 +42,7 @@ class AadhaarController {
                     logger_1.logger.warn("OCR validation failed:", validation.errors);
                 }
                 // Save to database
-                const aadhaarRecord = await this.aadhaarRepository.create({
+                const aadhaarRecord = await this.aadhaarRepository.findOrCreateByAadhaarNumber({
                     ...ocrResult.data,
                     frontImagePath: frontImage.path,
                     backImagePath: backImage.path,

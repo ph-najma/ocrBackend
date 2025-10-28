@@ -16,7 +16,7 @@ export interface IAadhaar extends Document {
     updatedAt: Date;
     formattedAadhaarNumber?: string;
 }
-export declare const AadhaarModel: mongoose.Model<IAadhaar, {}, {}, {}, mongoose.Document<unknown, {}, IAadhaar> & IAadhaar & Required<{
+export declare const AadhaarModel: mongoose.Model<IAadhaar, {}, {}, {}, mongoose.Document<unknown, {}, IAadhaar, {}, {}> & IAadhaar & Required<{
     _id: unknown;
 }> & {
     __v: number;

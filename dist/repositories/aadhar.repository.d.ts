@@ -1,19 +1,19 @@
 import { IAadhaar } from "../models/aadhar.model";
 import { FilterQuery, UpdateQuery } from "mongoose";
 export interface IRepository<T> {
-    create(data: Partial<T>): Promise<T>;
     findById(id: string): Promise<T | null>;
     findOne(filter: FilterQuery<T>): Promise<T | null>;
     findAll(filter?: FilterQuery<T>, limit?: number, skip?: number): Promise<T[]>;
     update(id: string, data: UpdateQuery<T>): Promise<T | null>;
     delete(id: string): Promise<boolean>;
     count(filter?: FilterQuery<T>): Promise<number>;
+    findOrCreateByAadhaarNumber(aadhaarData: Partial<IAadhaar>): Promise<IAadhaar>;
 }
 export declare class AadhaarRepository implements IRepository<IAadhaar> {
     /**
      * Create a new Aadhaar record
      */
-    create(data: Partial<IAadhaar>): Promise<IAadhaar>;
+    findOrCreateByAadhaarNumber(aadhaarData: Partial<IAadhaar>): Promise<IAadhaar>;
     /**
      * Find Aadhaar record by ID
      */

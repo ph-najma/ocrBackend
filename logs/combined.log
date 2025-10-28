@@ -129,3 +129,313 @@
 {"level":"info","message":"API endpoint: http://localhost:3000/api/ocr","service":"aadhaar-ocr","timestamp":"2025-10-23 20:41:47"}
 {"level":"info","message":"SIGINT signal received: closing HTTP server","service":"aadhaar-ocr","timestamp":"2025-10-23 20:42:01"}
 {"level":"info","message":"HTTP server closed","service":"aadhaar-ocr","timestamp":"2025-10-23 20:42:01"}
+{"level":"info","message":"Successfully connected to MongoDB","service":"aadhaar-ocr","timestamp":"2025-10-24 17:25:31"}
+{"level":"info","message":"Database connection established","service":"aadhaar-ocr","timestamp":"2025-10-24 17:25:31"}
+{"level":"info","message":"Server is running on port 3000","service":"aadhaar-ocr","timestamp":"2025-10-24 17:25:31"}
+{"level":"info","message":"Environment: development","service":"aadhaar-ocr","timestamp":"2025-10-24 17:25:31"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"aadhaar-ocr","timestamp":"2025-10-24 17:25:31"}
+{"level":"info","message":"API endpoint: http://localhost:3000/api/ocr","service":"aadhaar-ocr","timestamp":"2025-10-24 17:25:31"}
+{"ip":"::1","level":"info","message":"POST /api/ocr/process","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:04","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processing Aadhaar card images...","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:04"}
+{"level":"info","message":"Starting OCR processing...","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:04"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 14.29%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 21.43%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 28.57%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 35.71%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 42.86%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 50.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 57.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 15.71%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 64.29%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 22.86%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 31.43%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 38.57%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 47.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 54.29%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 62.86%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"Text extraction completed","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"aadhaarNumber":"999900001111","dob":"01/01/1990","gender":"Male","level":"info","message":"Parsed Aadhaar data:","name":"RAHUL TEST\nDOB\n\nPHOTO","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"error","message":"OCR processing error: Aadhaar number already exists","service":"aadhaar-ocr","stack":"Error: Aadhaar number already exists\n    at AadhaarRepository.create (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\repositories\\aadhar.repository.js:17:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async AadhaarController.processOCR (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\controllers\\aadhar.controller.js:45:39)","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"Deleted file: uploads\\frontImage-1761306964501-321225520.png","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"level":"info","message":"Deleted file: uploads\\backImage-1761306964501-994324905.png","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:05"}
+{"ip":"::1","level":"info","message":"POST /api/ocr/process","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:08","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processing Aadhaar card images...","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:08"}
+{"level":"info","message":"Starting OCR processing...","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:08"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 14.29%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 21.43%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 28.57%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 35.71%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 42.86%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 15.71%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 50.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 57.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 64.29%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 22.86%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 31.43%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 38.57%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 47.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 54.29%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 62.86%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"Text extraction completed","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"aadhaarNumber":"999900001111","dob":"01/01/1990","gender":"Male","level":"info","message":"Parsed Aadhaar data:","name":"RAHUL TEST\nDOB\n\nPHOTO","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"error","message":"OCR processing error: Aadhaar number already exists","service":"aadhaar-ocr","stack":"Error: Aadhaar number already exists\n    at AadhaarRepository.create (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\repositories\\aadhar.repository.js:17:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async AadhaarController.processOCR (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\controllers\\aadhar.controller.js:45:39)","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"Deleted file: uploads\\frontImage-1761306968651-451585170.png","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"level":"info","message":"Deleted file: uploads\\backImage-1761306968651-232254006.png","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:09"}
+{"ip":"::1","level":"info","message":"POST /api/ocr/process","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:21","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processing Aadhaar card images...","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:21"}
+{"level":"info","message":"Starting OCR processing...","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:21"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 14.29%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 21.43%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 28.57%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 35.71%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 42.86%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 15.71%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 50.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 57.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:22"}
+{"level":"info","message":"OCR Progress: 64.29%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"OCR Progress: 22.86%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"OCR Progress: 31.43%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"OCR Progress: 38.57%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"OCR Progress: 47.14%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"OCR Progress: 54.29%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"OCR Progress: 62.86%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"Text extraction completed","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"aadhaarNumber":"999900001111","dob":"01/01/1990","gender":"Male","level":"info","message":"Parsed Aadhaar data:","name":"RAHUL TEST\nDOB\n\nPHOTO","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"error","message":"OCR processing error: Aadhaar number already exists","service":"aadhaar-ocr","stack":"Error: Aadhaar number already exists\n    at AadhaarRepository.create (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\repositories\\aadhar.repository.js:17:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async AadhaarController.processOCR (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\controllers\\aadhar.controller.js:45:39)","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"Deleted file: uploads\\frontImage-1761306981896-838441401.png","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"Deleted file: uploads\\backImage-1761306981896-80314349.png","service":"aadhaar-ocr","timestamp":"2025-10-24 17:26:23"}
+{"level":"info","message":"Successfully connected to MongoDB","service":"aadhaar-ocr","timestamp":"2025-10-28 18:36:10"}
+{"level":"info","message":"Database connection established","service":"aadhaar-ocr","timestamp":"2025-10-28 18:36:10"}
+{"level":"info","message":"Server is running on port 3000","service":"aadhaar-ocr","timestamp":"2025-10-28 18:36:10"}
+{"level":"info","message":"Environment: development","service":"aadhaar-ocr","timestamp":"2025-10-28 18:36:10"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"aadhaar-ocr","timestamp":"2025-10-28 18:36:10"}
+{"level":"info","message":"API endpoint: http://localhost:3000/api/ocr","service":"aadhaar-ocr","timestamp":"2025-10-28 18:36:10"}
+{"ip":"::1","level":"info","message":"POST /api/ocr/process","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:16","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processing Aadhaar card images...","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:16"}
+{"level":"info","message":"Starting OCR processing...","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:16"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:17"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:17"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:17"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:17"}
+{"level":"info","message":"OCR Progress: 14.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:17"}
+{"level":"info","message":"OCR Progress: 21.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 28.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 35.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 42.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 50.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 57.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 64.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 15.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 22.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 31.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 38.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 47.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 54.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 62.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"level":"info","message":"Text extraction completed","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"aadhaarNumber":"999900001111","dob":"01/01/1990","gender":"Male","level":"info","message":"Parsed Aadhaar data:","name":"RAHUL TEST\nDOB\n\nPHOTO","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"buffer":{"data":[105,0,194,154,145,48,57,251,104,24,31,108],"type":"Buffer"},"level":"info","message":"Aadhaar record saved:","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:18"}
+{"ip":"::1","level":"info","message":"POST /api/ocr/process","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:43","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processing Aadhaar card images...","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:43"}
+{"level":"info","message":"Starting OCR processing...","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:43"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:44"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:44"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:44"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 14.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 21.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 28.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 35.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 42.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 50.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 15.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 57.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 64.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 22.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 31.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 38.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 47.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 54.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 62.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"Text extraction completed","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"aadhaarNumber":"999900001111","dob":"01/01/1990","gender":"Male","level":"info","message":"Parsed Aadhaar data:","name":"RAHUL TEST\nDOB\n\nPHOTO","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"error","message":"OCR processing error: Aadhaar number already exists","service":"aadhaar-ocr","stack":"Error: Aadhaar number already exists\n    at AadhaarRepository.create (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\repositories\\aadhar.repository.js:17:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async AadhaarController.processOCR (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\controllers\\aadhar.controller.js:45:39)","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"Deleted file: uploads\\frontImage-1761657523825-399410758.png","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"Deleted file: uploads\\backImage-1761657523825-57249553.png","service":"aadhaar-ocr","timestamp":"2025-10-28 18:48:45"}
+{"level":"info","message":"Successfully connected to MongoDB","service":"aadhaar-ocr","timestamp":"2025-10-28 23:39:45"}
+{"level":"info","message":"Database connection established","service":"aadhaar-ocr","timestamp":"2025-10-28 23:39:45"}
+{"level":"info","message":"Server is running on port 3000","service":"aadhaar-ocr","timestamp":"2025-10-28 23:39:45"}
+{"level":"info","message":"Environment: development","service":"aadhaar-ocr","timestamp":"2025-10-28 23:39:45"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"aadhaar-ocr","timestamp":"2025-10-28 23:39:45"}
+{"level":"info","message":"API endpoint: http://localhost:3000/api/ocr","service":"aadhaar-ocr","timestamp":"2025-10-28 23:39:45"}
+{"ip":"::1","level":"info","message":"POST /api/ocr/process","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:12","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processing Aadhaar card images...","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:12"}
+{"level":"info","message":"Starting OCR processing...","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:12"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 14.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 21.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 28.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 35.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 42.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 15.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 50.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 57.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 64.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 22.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 31.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 38.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 47.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 54.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 62.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:13"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:14"}
+{"level":"info","message":"Text extraction completed","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:14"}
+{"aadhaarNumber":"999900001111","dob":"01/01/1990","gender":"Male","level":"info","message":"Parsed Aadhaar data:","name":"RAHUL TEST\nDOB\n\nPHOTO","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:14"}
+{"level":"error","message":"OCR processing error: Aadhaar number already exists","service":"aadhaar-ocr","stack":"Error: Aadhaar number already exists\n    at AadhaarRepository.create (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\repositories\\aadhar.repository.js:17:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async AadhaarController.processOCR (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\controllers\\aadhar.controller.js:45:39)","timestamp":"2025-10-28 23:40:14"}
+{"level":"info","message":"Deleted file: uploads\\frontImage-1761675012172-451645667.png","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:14"}
+{"level":"info","message":"Deleted file: uploads\\backImage-1761675012173-353887460.png","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:14"}
+{"ip":"::1","level":"info","message":"POST /api/ocr/process","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:22","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processing Aadhaar card images...","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:22"}
+{"level":"info","message":"Starting OCR processing...","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:22"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:23"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:23"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:23"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 14.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 21.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 28.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 35.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 42.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 15.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 50.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 57.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 64.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 22.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 31.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 38.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 47.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 54.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 62.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"Text extraction completed","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"aadhaarNumber":"999900001111","dob":"01/01/1990","gender":"Male","level":"info","message":"Parsed Aadhaar data:","name":"RAHUL TEST\nDOB\n\nPHOTO","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"error","message":"OCR processing error: Aadhaar number already exists","service":"aadhaar-ocr","stack":"Error: Aadhaar number already exists\n    at AadhaarRepository.create (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\repositories\\aadhar.repository.js:17:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async AadhaarController.processOCR (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\controllers\\aadhar.controller.js:45:39)","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"Deleted file: uploads\\frontImage-1761675022796-886125500.png","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"level":"info","message":"Deleted file: uploads\\backImage-1761675022796-201464844.png","service":"aadhaar-ocr","timestamp":"2025-10-28 23:40:24"}
+{"ip":"::1","level":"info","message":"POST /api/ocr/process","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:06","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processing Aadhaar card images...","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:06"}
+{"level":"info","message":"Starting OCR processing...","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:06"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 14.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 21.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 28.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 35.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 42.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 15.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 50.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 57.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 64.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 22.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:07"}
+{"level":"info","message":"OCR Progress: 31.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"level":"info","message":"OCR Progress: 38.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"level":"info","message":"OCR Progress: 47.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"level":"info","message":"OCR Progress: 54.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"level":"info","message":"OCR Progress: 62.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"level":"info","message":"Text extraction completed","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"aadhaarNumber":"999900001111","dob":"01/01/1990","gender":"Male","level":"info","message":"Parsed Aadhaar data:","name":"RAHUL TEST\nDOB\n\nPHOTO","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"level":"error","message":"OCR processing error: Aadhaar number already exists","service":"aadhaar-ocr","stack":"Error: Aadhaar number already exists\n    at AadhaarRepository.create (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\repositories\\aadhar.repository.js:17:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async AadhaarController.processOCR (C:\\Users\\phnaj\\aadhaar-ocr\\backend\\dist\\controllers\\aadhar.controller.js:45:39)","timestamp":"2025-10-28 23:41:08"}
+{"level":"info","message":"Deleted file: uploads\\frontImage-1761675066556-831631005.png","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"level":"info","message":"Deleted file: uploads\\backImage-1761675066556-684551253.png","service":"aadhaar-ocr","timestamp":"2025-10-28 23:41:08"}
+{"level":"info","message":"SIGINT signal received: closing HTTP server","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:07"}
+{"level":"info","message":"Successfully connected to MongoDB","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:21"}
+{"level":"info","message":"Database connection established","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:21"}
+{"level":"info","message":"Server is running on port 3000","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:21"}
+{"level":"info","message":"Environment: development","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:21"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:21"}
+{"level":"info","message":"API endpoint: http://localhost:3000/api/ocr","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:21"}
+{"ip":"::1","level":"info","message":"POST /api/ocr/process","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:41","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processing Aadhaar card images...","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:41"}
+{"level":"info","message":"Starting OCR processing...","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:41"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 14.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 21.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 28.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 35.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 15.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 42.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 50.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 57.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 64.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 22.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 31.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 38.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 47.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 54.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 62.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:42"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:43"}
+{"level":"info","message":"Text extraction completed","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:43"}
+{"aadhaarNumber":"999900001111","dob":"01/01/1990","gender":"Male","level":"info","message":"Parsed Aadhaar data:","name":"RAHUL TEST\nDOB\n\nPHOTO","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:43"}
+{"buffer":{"data":[105,0,194,154,145,48,57,251,104,24,31,108],"type":"Buffer"},"level":"info","message":"Aadhaar record saved:","service":"aadhaar-ocr","timestamp":"2025-10-28 23:42:43"}
+{"ip":"::1","level":"info","message":"POST /api/ocr/process","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:11","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processing Aadhaar card images...","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:11"}
+{"level":"info","message":"Starting OCR processing...","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:11"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:11"}
+{"level":"info","message":"OCR Progress: 0.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:11"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 7.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 14.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 21.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 28.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 35.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 42.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 15.71%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 50.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 57.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 64.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 22.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 31.43%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 38.57%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 47.14%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 54.29%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 62.86%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"OCR Progress: 100.00%","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"Text extraction completed","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"aadhaarNumber":"999900001111","dob":"01/01/1990","gender":"Male","level":"info","message":"Parsed Aadhaar data:","name":"RAHUL TEST\nDOB\n\nPHOTO","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"buffer":{"data":[105,0,194,154,145,48,57,251,104,24,31,108],"type":"Buffer"},"level":"info","message":"Aadhaar record saved:","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:12"}
+{"level":"info","message":"SIGINT signal received: closing HTTP server","service":"aadhaar-ocr","timestamp":"2025-10-28 23:43:24"}

@@ -56,13 +56,14 @@ export class AadhaarController {
       }
 
       // Save to database
-      const aadhaarRecord = await this.aadhaarRepository.create({
-        ...ocrResult.data,
-        frontImagePath: frontImage.path,
-        backImagePath: backImage.path,
-        rawFrontText: ocrResult.rawText.front,
-        rawBackText: ocrResult.rawText.back,
-      });
+      const aadhaarRecord =
+        await this.aadhaarRepository.findOrCreateByAadhaarNumber({
+          ...ocrResult.data,
+          frontImagePath: frontImage.path,
+          backImagePath: backImage.path,
+          rawFrontText: ocrResult.rawText.front,
+          rawBackText: ocrResult.rawText.back,
+        });
       console.log(aadhaarRecord);
 
       logger.info("Aadhaar record saved:", aadhaarRecord._id);
